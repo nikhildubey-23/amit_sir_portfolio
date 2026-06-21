@@ -1369,10 +1369,45 @@ img { max-width: 100%; }
   flex-wrap: wrap;
 }
 
+.team-note {
+  max-width: 750px;
+  margin: 40px auto 0;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(30, 136, 229, 0.04), rgba(46, 125, 50, 0.04));
+  border: 1px solid rgba(30, 136, 229, 0.12);
+  border-radius: var(--border-radius);
+  text-align: left;
+}
+
+.team-note i {
+  font-size: 2rem;
+  color: var(--accent-blue-dark);
+  flex-shrink: 0;
+}
+
+.team-note p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
 @media (max-width: 900px) {
   .team-grid {
     grid-template-columns: 1fr;
     max-width: 500px;
+  }
+
+  .team-note {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 18px;
+  }
+
+  .team-note i {
+    font-size: 1.5rem;
   }
 }
 
